@@ -1,0 +1,10 @@
+Current Date and Time is: 2023-09-23 11:46:05.355570
+Id is: 9798
+Name is: Dhrutidhar
+Subject is: Python
+------------------------
+Current Date and Time is: 2023-09-23 11:46:12.257387
+Id is: 3733
+Name is: Sahil
+Subject is: Ccc
+------------------------
