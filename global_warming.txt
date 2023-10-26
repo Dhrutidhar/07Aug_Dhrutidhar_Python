@@ -1,0 +1,27 @@
+Global warming, also referred to as climate change, is the observed century-scale rise in the average temperature of 
+the Earth's climate system, and its related effects.[1][2] 
+Multiple lines of scientific evidence show that the climate system is warming.
+Many of the observed changes since the 1950s are unprecedented in the instrumental temperature record, 
+which extends back to the mid-19th century, and in paleoclimate proxy records covering thousands of years.[6]
+
+In 2013, the Intergovernmental Panel on Climate Change (IPCC) Fifth Assessment Report concluded that 
+"It is extremely likely that human influence has been the dominant cause of the observed warming since the mid-20th century.
+The largest human influence has been the emission of greenhouse gases such as carbon dioxide, methane and nitrous oxide.
+Climate model projections summarized in the report indicated that during the 21st century, 
+the global surface temperature is likely to rise a further in the lowest emissions scenario, 
+and in the highest emissions scenario.
+These findings have been recognized by the national science academies of the major industrialized nations[9]
+[a] and are not disputed by any scientific body of national or international standing.[11][12]
+
+Future climate change and associated impacts will differ from region to region.
+Anticipated effects include increasing global temperatures, rising sea levels, changing precipitation, 
+and expansion of deserts in the subtropics.[15] 
+Warming is expected to be greater over land than over the oceans and greatest in the Arctic, with the continuing retreat of glaciers,
+permafrost and sea ice. Other likely changes include more frequent extreme weather events such as heat waves, droughts, 
+heavy rainfall with floods and heavy snowfall;[16] ocean acidification; and species extinctions due to shifting temperature regimes. 
+Effects significant to humans include the threat to food security from decreasing crop yields and the abandonment of
+populated areas due to rising sea levels.
+Because the climate system has a large "inertia" and greenhouse gases will remain in the atmosphere for a long time, 
+many of these effects will persist for not only decades or centuries, but for tens of thousands of years to come.[19]
+This is Dhrutidhar Kotadiya
+Using Python..
