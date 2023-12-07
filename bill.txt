@@ -1,0 +1,6 @@
+Customer Name: amit
+
+Item            Quantity   Price     
+50              2          20.0      
+
+Total Amount: 20.0
