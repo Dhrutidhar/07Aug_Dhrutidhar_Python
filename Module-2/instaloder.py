@@ -17,11 +17,11 @@ print(profile.username+" is following " + str(profile.followees)+' people')
 print("Bio: ", profile.biography)
 instaloader.Instaloader().download_profile(usrname,profile_pic_only=True)'''
 
-import instaloader
+import instaloder
 
 name=input("Enter instagram id:")
 
-insta=instaloader.Instaloader()
+insta=instaloder.Instaloader()
 
 #insta.download_profile(name,profile_pic_only=True)
 insta.download_profile(name,profile_pic_only = False)
