@@ -61,7 +61,7 @@
                 <a class="nav-link" href="service/">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="news/"> News </a>
+                <a class="nav-link" href=" /"> News </a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="/">Contact Us <span class="sr-only">(current)</span> </a>
@@ -98,11 +98,12 @@
                 Get In Touch
               </h2>
             </div>
-            <form action="#" class="contact_form">
-              <input type="text" name="your_name" class="form-control" id="inputName" placeholder="Your Name">
-              <input type="text" name="phone_number" class="form-control" id="inputNumber" placeholder="Mobile Number">
-              <input type="email" name="email_address" class="form-control" id="inputMail" placeholder="Email">
-              <input type="text" name="your_message" class="form-control" id="inputMessage" placeholder="Message">
+            <form  method='POST' class="contact_form">
+              {%csrf_token%}
+              <input type="text" name="name" class="form-control" id="inputName" placeholder="Your Name">
+              <input type="tel" name="mobile_number" class="form-control" id="inputNumber" placeholder="Mobile Number">
+              <input type="email" name="mail" class="form-control" id="inputMail" placeholder="Email">
+              <input type="text" name="msg" class="form-control" id="inputMessage" placeholder="Message">
               <div class="btn-box btn-center">
                 <button type="submit" class="submit_btn">
                   Send

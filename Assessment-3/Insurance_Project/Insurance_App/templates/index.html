@@ -131,7 +131,7 @@
                 <label for="validationCustomUsername" class="form-label">Username</label>
                 <div class="input-group has-validation">
                   <span class="input-group-text" id="inputGroupPrepend">@</span>
-                  <input type="text" name="username" class="form-control" id="validationCustomUsername"
+                  <input type="email" name="username" class="form-control" id="validationCustomUsername"
                     aria-describedby="inputGroupPrepend" required>
                   <div class="invalid-feedback">
                     Please choose a username.
@@ -209,18 +209,18 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form method="post">
+            <form method="POST">
               {% csrf_token %}
               <div class="col-md-6">
                 <label for="validationCustom04" class="form-label">Your Role</label>
                 <select class="form-select" name="role" id="validationCustom04" required>
-                    <option>Admin</option>
-                    <option>Customer</option>
+                  <option>Admin</option>
+                  <option>Customer</option>
                 </select>
                 <div class="invalid-feedback">
-                    Please select a valid Role.
+                  Please select a valid Role.
                 </div>
-            </div>
+              </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address / Username</label>
                 <input type="email" name="username" class="form-control" id="exampleInputEmail1"
@@ -242,6 +242,7 @@
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
           </div>
+          <a type="submit" class="btn btn-primary" href="/resetpass" >Forgot Password</a>
         </div>
       </div>
     </div>
@@ -369,37 +370,35 @@
           <div class="col-md-6 col-lg-3 ">
             <div class="box ">
               <div class="img-box">
-                <img src="/static/images/s1.png" alt="">
+                <img src="/static/images/bronze.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Home Insurance
+                  Bronze Health Insurance
                 </h5>
                 <p>
-                  Where we understand that your home is more than just a place; it's a sanctuary. Our Home Insurance
-                  services are designed to provide comprehensive protection for your most valuable asset. Here's how we
-                  safeguard your haven.
+                  Bronze health insurance plans feature low monthly payments with a higher deductible. These plans are best for individuals or couples who have few doctor visits and only need or want coverage for medical emergencies.
                 </p>
-                <a
-                  href="https://www.investopedia.com/insurance/homeowners-insurance-guide/#:~:text=Homeowners%20insurance%20policies%20generally%20cover,and%20extended%20replacement%20cost%2Fvalue.">
-                  Read More
-                </a>
+                  <a
+                    href="https://www.anthem.com/ca/individual-and-family/health-insurance">
+                    Read More
+                  </a>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 ">
             <div class="box ">
               <div class="img-box">
-                <img src="/static/images/s2.png" alt="">
+                <img src="/static/images/silver.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Health Insurance
+                  Silver Health Insurance
                 </h5>
                 <p>
-                  Where we prioritize your well-being through our comprehensive Health Insurance services. Our
-                  commitment is to ensure that you and your loved ones receive the best possible medical care without
-                  the burden of financial worry. Here's how our Health Insurance plans work to safeguard your health.
+                  Silver health insurance plans have average monthly payments but a lower deductible than a Bronze plan.
+                  These plans are ideal for individuals and smaller families with average healthcare needs. Silver plans
+                  also offer cost-sharing reductions for those who qualify.
                 </p>
                 <a href="https://www.forbes.com/advisor/in/health-insurance/what-is-health-insurance/">
                   Read More
@@ -410,19 +409,17 @@
           <div class="col-md-6 col-lg-3 ">
             <div class="box ">
               <div class="img-box">
-                <img src="/static/images/s3.png" alt="">
+                <img src="/static/images/gold.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Car Insurance
+                  Gold Health Insurance
                 </h5>
                 <p>
-                  Where we rev up your peace of mind with our exceptional Car Insurance services. Our commitment is to
-                  keep you confidently cruising the roads, knowing that you are covered in every journey. Here's how our
-                  Car Insurance plans revolve around your needs.
+                  Gold health insurance plans have higher monthly payments but an even lower deductible than Silver plans. They are best for individuals or families with regular, ongoing healthcare needs. Gold plans cover most routine healthcare costs.
                 </p>
                 <a
-                  href="https://www.policybazaar.com/motor-insurance/car-insurance/articles/know-all-about-car-insurance/">
+                  href="https://www.anthem.com/ca/individual-and-family/health-insurance">
                   Read More
                 </a>
               </div>
@@ -431,17 +428,14 @@
           <div class="col-md-6 col-lg-3 ">
             <div class="box ">
               <div class="img-box">
-                <img src="/static/images/s4.png" alt="">
+                <img src="/static/images/platinum.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Life Insurance
+                  Platinum Health Insurance
                 </h5>
                 <p>
-                  Where we understand that life is full of uncertainties, and securing the financial future of your
-                  loved ones is a priority. Our Life Insurance services are designed to provide a robust shield for your
-                  family's well-being and financial stability. Here's how our Life Insurance plans work to safeguard
-                  your legacy.
+                  Platinum-level plans require the highest monthly payments but feature the lowest deductibles (sometimes even no deductible). These plans are best for individuals and families with ongoing or specialized care needs and who want the most complete coverage.
                 </p>
                 <a href="https://www.investopedia.com/terms/l/lifeinsurance.asp">
                   Read More
@@ -451,7 +445,7 @@
           </div>
         </div>
         <div class="btn-box">
-          <a href="https://www.maxlifeinsurance.com/blog/life-insurance/types-of-insurance">
+          <a href="https://www.healthcare.gov/choose-a-plan/plans-categories/">
             View All
           </a>
         </div>

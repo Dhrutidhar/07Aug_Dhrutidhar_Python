@@ -24,8 +24,10 @@ SECRET_KEY = 'django-insecure-a-z053ye9i!k9gx3g2u3j4o4l61*tn$mp0)@*uih2a696(5n#p
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = False
 
 ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -77,7 +79,7 @@ WSGI_APPLICATION = 'Insurance_Project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'insurance_db',
+        'NAME': 'insurance',
         'USER': 'root',
         'PASSWORD': '',
         'HOST':'127.0.0.1',
@@ -117,7 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -139,3 +141,10 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+#Email Config.
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "dhrutidharkotadiya51@gmail.com"
+EMAIL_HOST_PASSWORD = "wotz hbke szxs jgnf"
