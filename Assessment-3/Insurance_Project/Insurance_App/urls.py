@@ -14,5 +14,6 @@ urlpatterns = [
     path('grantpolicies/<int:id>', views.grantpolicy),
     path('resetpass/',views.resetpass),
     path('newpass/', views.newpass, name='newpass'),
+    path('update_profile/', views.update_profile),
 
 ]

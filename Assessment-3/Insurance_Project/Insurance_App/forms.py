@@ -29,3 +29,7 @@ class update_form(forms.ModelForm):
         model = usersignup
         fields = ["password"]
 
+class update_profile_f(forms.ModelForm):
+    class Meta:
+        model = usersignup
+        fields = ['firstname', 'lastname','username','password' ,'city', 'state','mobile']

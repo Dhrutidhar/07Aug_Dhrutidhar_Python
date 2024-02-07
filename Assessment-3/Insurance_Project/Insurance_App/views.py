@@ -88,6 +88,7 @@ def index(request):
                 status = True
                 request.session["user"] = c_unm
                 request.session['c_role'] = c_role
+                request.session['uid'] = c_id.id
                 return redirect('policies')
             else:
                 msg = "Invalid Credentials..."
@@ -200,7 +201,7 @@ def resetpass(request):
         email_f = request.POST['username']
         mob_f = request.POST['mobile']
         try:
-            user = usersignup.objects.get(username=email_f, mobile=mob_f)
+            user = signupForm.objects.get(username=email_f, mobile=mob_f)
             uid = user.id
             print("User id:", uid)
             request.session['uid']=uid
@@ -227,3 +228,19 @@ def newpass(request):
         else:
             print("Error!!!!")
     return render(request, 'newpass.html')
+
+def update_profile(request):
+    user=request.session.get('user')
+    uid=request.session.get('uid')
+    cuser=usersignup.objects.get(id=uid)
+    # stid=usersignup.objects.get(id=id)
+    if request.method=='POST':
+        newuser=update_profile_f(request.POST,instance=cuser)
+        if newuser.is_valid():
+            newuser.save()
+            print("Profile updated!")
+            return redirect("policies")
+        else:
+            print(newuser.errors)
+    return render(request,'update_profile.html',{'user':user,'cuser':cuser})
+    # return render(request, 'update_profile.html')

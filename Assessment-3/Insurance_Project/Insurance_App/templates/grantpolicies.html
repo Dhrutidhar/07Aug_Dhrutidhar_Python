@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/images/favicon.png" type="image/x-icon">
+
     <title>Grant Policy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -37,11 +39,10 @@
         <!-- Radio button for gender -->
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Gender</label>
-            <select class="form-select"  name="gender" value="{{policyid.gender}}" aria-label="Default select example">
-                <option selected>Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
+            <select class="form-select"  name="gender" value="" aria-label="Default select example">
+                <option >Male</option>
+                <option >Female</option>
+                <option >Other</option>
             </select>
         </div>
         <!-- Radio button end -->
